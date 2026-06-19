@@ -164,16 +164,14 @@
     }
   </style>
 </head>
-
 <body>
 
   <audio id="music" loop>
-    <source src="./birthday-song.mp3" type="audio/mpeg">
+    <source src="birthday-song.mp3" type="audio/mpeg">
   </audio>
 
   <section class="hero">
     <h1>For My Loveee ❤️❤️</h1>
-
     <p>
       A special surprise for the most beautiful lady
       in the entire Multiverse ❤️
@@ -219,9 +217,9 @@ Forever your biggest fan,
     </section>
 
     <section class="gallery">
-      <img src="./images/photo1.jpg" alt="Birthday photo 1">
-      <img src="./images/photo2.jpg" alt="Birthday photo 2">
-      <img src="./images/photo3.jpg" alt="Birthday photo 3">
+      <img src="Photo1.jpg" alt="Memory 1">
+      <img src="Photo2.jpg" alt="Memory 2">
+      <img src="photo3.jpg" alt="Memory 3">
     </section>
 
     <section class="final">
@@ -240,7 +238,7 @@ Forever your biggest fan,
 
       const music = document.getElementById("music");
       music.play().catch(() => {
-        console.log("Autoplay blocked until user interaction is fully allowed.");
+        console.log("Playback blocked by browser.");
       });
 
       if (!heartsStarted) {
