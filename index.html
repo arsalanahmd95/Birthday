@@ -1,290 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Urooj ❤️</title>
- 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
- 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
- 
-body{
-    font-family:'Poppins',sans-serif;
-    background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
-    color:white;
-    overflow-x:hidden;
-}
- 
-.hero{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    text-align:center;
-    padding:20px;
-}
- 
-.hero h1{
-    font-family:'Great Vibes',cursive;
-    font-size:5rem;
-    color:#ffd700;
-    text-shadow:0 0 20px rgba(255,215,0,.5);
-}
- 
-.hero p{
-    margin-top:20px;
-    font-size:1.2rem;
-    max-width:700px;
-}
- 
-.btn{
-    margin-top:30px;
-    padding:15px 35px;
-    border:none;
-    border-radius:50px;
-    background:gold;
-    color:#111;
-    font-weight:bold;
-    cursor:pointer;
-    font-size:18px;
-    transition:.3s;
-}
- 
-.btn:hover{
-    transform:scale(1.08);
-}
- 
-.hidden{
-    display:none;
-}
- 
-.message{
-    max-width:900px;
-    margin:auto;
-    padding:60px 25px;
-    text-align:center;
-}
- 
-.message h2{
-    font-family:'Great Vibes',cursive;
-    color:gold;
-    font-size:4rem;
-    margin-bottom:25px;
-}
- 
-.message p{
-    line-height:2;
-    font-size:1.15rem;
-}
- 
-.gallery{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:25px;
-    padding:40px 20px;
-}
- 
-.gallery img{
-    width:320px;
-    border-radius:25px;
-    box-shadow:0 0 30px rgba(255,215,0,.3);
-    transition:.4s;
-}
- 
-.gallery img:hover{
-    transform:scale(1.05);
-}
- 
-.final{
-    text-align:center;
-    padding:100px 20px;
-}
- 
-.final h1{
-    font-family:'Great Vibes',cursive;
-    font-size:5rem;
-    color:gold;
-}
- 
-.heart{
-    position:fixed;
-    color:#ff4d6d;
-    font-size:25px;
-    animation:float 8s linear infinite;
-}
- 
-@keyframes float{
-    0%{
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Urooj ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+      color:white;
+      overflow-x:hidden;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-family:'Great Vibes',cursive;
+      font-size:clamp(3rem, 8vw, 5rem);
+      color:#ffd700;
+      text-shadow:0 0 20px rgba(255,215,0,.5);
+    }
+
+    .hero p{
+      margin-top:20px;
+      font-size:1.2rem;
+      max-width:700px;
+      line-height:1.8;
+    }
+
+    .btn{
+      margin-top:30px;
+      padding:15px 35px;
+      border:none;
+      border-radius:50px;
+      background:gold;
+      color:#111;
+      font-weight:bold;
+      cursor:pointer;
+      font-size:18px;
+      transition:.3s;
+      box-shadow:0 10px 25px rgba(255,215,0,0.25);
+    }
+
+    .btn:hover{
+      transform:scale(1.08);
+    }
+
+    .hidden{
+      display:none;
+    }
+
+    .message{
+      max-width:900px;
+      margin:auto;
+      padding:60px 25px;
+      text-align:center;
+    }
+
+    .message h2{
+      font-family:'Great Vibes',cursive;
+      color:gold;
+      font-size:clamp(2.5rem, 7vw, 4rem);
+      margin-bottom:25px;
+    }
+
+    .message p{
+      line-height:2;
+      font-size:1.1rem;
+      white-space:pre-line;
+    }
+
+    .gallery{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:25px;
+      padding:40px 20px 60px;
+    }
+
+    .gallery img{
+      width:320px;
+      max-width:90vw;
+      border-radius:25px;
+      box-shadow:0 0 30px rgba(255,215,0,.3);
+      transition:.4s;
+      object-fit:cover;
+      background:#111;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.05);
+    }
+
+    .final{
+      text-align:center;
+      padding:80px 20px 100px;
+    }
+
+    .final h1{
+      font-family:'Great Vibes',cursive;
+      font-size:clamp(3rem, 8vw, 5rem);
+      color:gold;
+      margin-bottom:15px;
+    }
+
+    .heart{
+      position:fixed;
+      color:#ff4d6d;
+      font-size:25px;
+      animation:float 8s linear infinite;
+      pointer-events:none;
+      z-index:9999;
+    }
+
+    @keyframes float{
+      0%{
         transform:translateY(100vh);
         opacity:1;
-    }
-    100%{
+      }
+      100%{
         transform:translateY(-100px);
         opacity:0;
+      }
     }
-}
- 
-.sparkle{
-    position:fixed;
-    width:6px;
-    height:6px;
-    border-radius:50%;
-    background:gold;
-    animation:spark 2s linear infinite;
-}
- 
-@keyframes spark{
-    from{
+
+    .sparkle{
+      position:fixed;
+      width:6px;
+      height:6px;
+      border-radius:50%;
+      background:gold;
+      animation:spark 2s linear infinite;
+      pointer-events:none;
+      z-index:9999;
+    }
+
+    @keyframes spark{
+      from{
         transform:translateY(0);
         opacity:1;
-    }
-    to{
+      }
+      to{
         transform:translateY(-120px);
         opacity:0;
+      }
     }
-}
-</style>
+  </style>
 </head>
- 
+
 <body>
- 
-<audio id="music" loop>
-    <source src="birthday-song.mp3" type="audio/mpeg">
-</audio>
- 
-<section class="hero">
+
+  <audio id="music" loop>
+    <source src="./birthday-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <section class="hero">
     <h1>For My Loveee ❤️❤️</h1>
- 
+
     <p>
-        A special surprise for the most beautiful lady
-        in the entire Multiverse ❤️
+      A special surprise for the most beautiful lady
+      in the entire Multiverse ❤️
     </p>
- 
+
     <button class="btn" onclick="startSurprise()">
-        Open My Surprise 🎁
+      Open My Surprise 🎁
     </button>
-</section>
- 
-<div id="content" class="hidden">
- 
-<section class="message">
-<h2>Happy Birthday My Urooj Durrani ❤️</h2>
- 
-<p>
+  </section>
+
+  <div id="content" class="hidden">
+
+    <section class="message">
+      <h2>Happy Birthday My Urooj Durrani ❤️</h2>
+
+      <p>
 To my girlfriend, my best friend, my baby, my girl,
 and sometimes my ex too 😂❤️
-<br><br>
- 
+
 Thank you for every smile, every laugh,
 every memory and every beautiful moment
 we've shared together.
- 
+
 No matter how much we tease each other,
 you'll always have a special place in my heart.
- 
+
 From our cute selfies to our unforgettable adventures,
 every moment with you became a memory worth keeping forever.
- 
+
 You are my favorite notification,
 my favorite person,
 and my favorite chapter of life.
- 
+
 May your smile always stay this beautiful,
 your heart always stay this pure,
 and your dreams always come true.
- 
-Happy Birthday Darling 👑❤️
- 
-<br><br>
- 
-Forever your biggest fan,
-<br>
-❤️ Arsalan ❤️
-</p>
-</section>
- 
-<section class="gallery">
-    <img src="Photo1.jpg" alt="">
-    <img src="Photo2.jpg" alt="">
-    <img src="photo3.jpg" alt="">
 
-</section>
- 
-<section class="final">
-    <h1>Happy Birthday My Real Princess ❤️</h1>
-    <p>Thank you for being my favorite person ❤️</p>
-</section>
- 
-</div>
- 
-<script>
- 
-function startSurprise(){
- 
-    document.getElementById("content").classList.remove("hidden");
- 
-    document.getElementById("music").play();
- 
-    createHearts();
-    createSparkles();
- 
-    window.scrollTo({
+Happy Birthday Darling 👑❤️
+
+Forever your biggest fan,
+❤️ Arsalan ❤️
+      </p>
+    </section>
+
+    <section class="gallery">
+      <img src="./images/photo1.jpg" alt="Birthday photo 1">
+      <img src="./images/photo2.jpg" alt="Birthday photo 2">
+      <img src="./images/photo3.jpg" alt="Birthday photo 3">
+    </section>
+
+    <section class="final">
+      <h1>Happy Birthday My Real Princess ❤️</h1>
+      <p>Thank you for being my favorite person ❤️</p>
+    </section>
+
+  </div>
+
+  <script>
+    let heartsStarted = false;
+    let sparklesStarted = false;
+
+    function startSurprise(){
+      document.getElementById("content").classList.remove("hidden");
+
+      const music = document.getElementById("music");
+      music.play().catch(() => {
+        console.log("Autoplay blocked until user interaction is fully allowed.");
+      });
+
+      if (!heartsStarted) {
+        createHearts();
+        heartsStarted = true;
+      }
+
+      if (!sparklesStarted) {
+        createSparkles();
+        sparklesStarted = true;
+      }
+
+      window.scrollTo({
         top: window.innerHeight,
-        behavior:'smooth'
-    });
- 
-    setTimeout(()=>{
+        behavior: 'smooth'
+      });
+
+      setTimeout(() => {
         alert("🎂 Happy Birthday Urooj ❤️");
-    },1000);
-}
- 
-function createHearts(){
- 
-    setInterval(()=>{
-        let heart=document.createElement("div");
+      }, 1000);
+    }
+
+    function createHearts(){
+      setInterval(() => {
+        let heart = document.createElement("div");
         heart.classList.add("heart");
-        heart.innerHTML="❤️";
- 
-        heart.style.left=Math.random()*100+"vw";
-        heart.style.fontSize=(20+Math.random()*30)+"px";
- 
+        heart.innerHTML = "❤️";
+
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.fontSize = (20 + Math.random() * 30) + "px";
+
         document.body.appendChild(heart);
- 
-        setTimeout(()=>{
-            heart.remove();
-        },8000);
- 
-    },300);
-}
- 
-function createSparkles(){
- 
-    setInterval(()=>{
-        let sparkle=document.createElement("div");
- 
+
+        setTimeout(() => {
+          heart.remove();
+        }, 8000);
+      }, 300);
+    }
+
+    function createSparkles(){
+      setInterval(() => {
+        let sparkle = document.createElement("div");
         sparkle.classList.add("sparkle");
- 
-        sparkle.style.left=Math.random()*100+"vw";
-        sparkle.style.top=(50+Math.random()*50)+"vh";
- 
+
+        sparkle.style.left = Math.random() * 100 + "vw";
+        sparkle.style.top = (50 + Math.random() * 50) + "vh";
+
         document.body.appendChild(sparkle);
- 
-        setTimeout(()=>{
-            sparkle.remove();
-        },2000);
- 
-    },150);
-}
- 
-</script>
- 
+
+        setTimeout(() => {
+          sparkle.remove();
+        }, 2000);
+      }, 150);
+    }
+  </script>
+
 </body>
 </html>
